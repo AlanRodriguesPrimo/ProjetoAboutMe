@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+#nome{
+    font-size: 50px;
+}
+#content-main{
+  background-color: #4280b1;  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid black;
+}
+.container-imagem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+
+}
+.imagem{
+    margin: 50px;
+    width: 50%;
+    border-radius: 10%;
+
+}
+#topicos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 40px;
+    width: 60%;
+}
+.list li{
+    list-style: none;
+    margin: 10px;
+}
+.list li a{
+        text-decoration: none;
+        color: white;
+        font-size: 24px;
+}
+.list li a:hover{
+    color: black;
+    border-bottom: 1px solid blue;
+    transition: linear;
+    transition-duration: .2s;
+}
+.section-content{
+    background-color: #7ebced ;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid black;
+}
+.section-content-text{
+    font-size: 24px;
+    width: 60%;
+    text-align: left;
+    margin-bottom: 50px;
+}
+.section-content-text h1{
+    margin: 20px;
+    text-align: left;
+}
+.titulo{
+    text-align: left;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+.subtitulo{
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 5px;
+    font-size: 18px;
+    color: rgb(21, 19, 19);
+    font-style: italic;
+}
+.paragrafo{
+    text-align: left;
+    margin-top: 5px;
+    margin-left: 30px;
+}
+.links{
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+}
+.links:hover{
+        color: blue;
+        border-bottom: 1px solid white;
+        transition: linear;
+        transition-duration: .2s;
+}
