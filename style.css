@@ -1,35 +1,41 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
-#nome{
+
+#nome {
     font-size: 50px;
 }
-#content-main{
-  background-color: #4280b1;  
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  border: 1px solid black;
+
+#content-main {
+    background-color: #4280b1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid black;
 }
-.container-imagem{
+
+.container-imagem {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 40%;
 
 }
-.imagem{
+
+.imagem {
     margin: 50px;
     width: 50%;
     border-radius: 10%;
 
 }
-#topicos{
+
+#topicos {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -37,44 +43,62 @@ html{
     gap: 40px;
     width: 60%;
 }
-.list li{
+
+.list li {
     list-style: none;
     margin: 10px;
 }
-.list li a{
-        text-decoration: none;
-        color: white;
-        font-size: 24px;
+
+.list li a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    position: relative;
+    cursor: pointer;
 }
-.list li a:hover{
-    color: black;
-    border-bottom: 1px solid blue;
-    transition: linear;
-    transition-duration: .2s;
+
+.list li a::after {
+    content: " ";
+    position: absolute;
+    bottom: 2px;
+    height: 2px;
+    width: 0px;
+    left: 0px;
+    transition: 0.3s;
+    background-color: #fff;
 }
-.section-content{
-    background-color: #7ebced ;
+
+.list li a:hover::after {
+    width: 100%;
+}
+
+.section-content {
+    background-color: #7ebced;
     display: flex;
     justify-content: space-around;
     border: 1px solid black;
 }
-.section-content-text{
+
+.section-content-text {
     font-size: 24px;
     width: 60%;
     text-align: left;
     margin-bottom: 50px;
 }
-.section-content-text h1{
+
+.section-content-text h1 {
     margin: 20px;
     text-align: left;
 }
-.titulo{
+
+.titulo {
     text-align: left;
     font-weight: bold;
     margin-top: 40px;
     margin-left: 20px;
 }
-.subtitulo{
+
+.subtitulo {
     text-align: left;
     margin-left: 20px;
     margin-top: 5px;
@@ -82,19 +106,30 @@ html{
     color: rgb(21, 19, 19);
     font-style: italic;
 }
-.paragrafo{
+
+.paragrafo {
     text-align: left;
     margin-top: 5px;
     margin-left: 30px;
 }
-.links{
+
+.links {
     text-decoration: none;
     color: black;
     font-size: 24px;
+    position: relative;
+    cursor: pointer;
 }
-.links:hover{
-        color: blue;
-        border-bottom: 1px solid white;
-        transition: linear;
-        transition-duration: .2s;
+.links::after {
+    content: " ";
+    position: absolute;
+    bottom: 2px;
+    height: 2px;
+    width: 0px;
+    left: 0px;
+    transition: 0.3s;
+    background-color: black;
+}
+.links:hover::after {
+    width: 100%;
 }
